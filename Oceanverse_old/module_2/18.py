@@ -1,5 +1,4 @@
 n = int(input("Enter the number of terms: "))
-
 first = 0
 second = 1
 

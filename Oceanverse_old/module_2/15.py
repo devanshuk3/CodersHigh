@@ -8,3 +8,16 @@ if str1 == str2:
     print("String is a palindrome!!")
 else:
     print("String is not a palindrome!!")
+
+# i=0
+# j=len(string)
+# tempList = ['']
+# print(tempList)
+# isPalindrome = True
+# while(i<j):
+#     if string[i]==string[j]:
+#         i+=1
+#         j-=1
+#     else:
+
+    # print(tempList)
