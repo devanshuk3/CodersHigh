@@ -19,6 +19,7 @@ for i in range(length):
     if before1[i] == before2[i]:
         beforeFreq += 1
         beforeCount[before1[i]] = beforeCount.get(before1[i], 0) + 1
+        # print("Before count:", beforeCount)
 
 beforeCollision = beforeFreq / length
 maxVal = 0
@@ -32,7 +33,7 @@ for j in range(26):
             if sentence1[i].isalpha():
                 ch = chr((ord(sentence1[i].lower()) - ord('a') + j) % 26 + ord('a'))
                 string1 += ch
-                
+                 
         for i in range(len(sentence2)):
             if sentence2[i].isalpha():
                 ch = chr((ord(sentence2[i].lower()) - ord('a') + k) % 26 + ord('a'))
@@ -60,11 +61,11 @@ print(val1, val2)
 # afterCollision = afterFreq / length
 # print("collision before shift:",beforeFreq)
 print("collision frequency before shift:",beforeCollision)
-# print("collision after shift:", afterFreq)
-# print("collision frequency after shift:",afterCollision)
-# overallChange=((afterCollision-beforeCollision)/beforeCollision)*100
-# print("Overall percentage Change :", round(overallChange, 2),"%")
-# print("\nCharacter-wise Collision Changes:\n")
+print("collision after shift:", afterFreq)
+print("collision frequency after shift:",afterCollision)
+overallChange=((afterCollision-beforeCollision)/beforeCollision)*100
+print("Overall percentage Change :", round(overallChange, 2),"%")
+print("\nCharacter-wise Collision Changes:\n")
 # letters = sorted(set(beforeCount.keys())|set(afterCount.keys()))
 # #sort the keys(acc to alphabetic order) and store them in a set(this removes all the duplicate values.)
 # #the union operator "|" combines two sets
