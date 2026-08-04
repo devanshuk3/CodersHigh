@@ -3,6 +3,7 @@ sentence2 = "Technology has become an essential part of modern life, influencing
 
 before1 = ""
 before2 = ""
+
 for i in range(len(sentence1)):
     if sentence1[i].isalpha():
         before1 += sentence1[i].lower()
@@ -14,17 +15,20 @@ for i in range(len(sentence2)):
 length = min(len(before1), len(before2))
 beforeFreq = 0
 beforeCount = {}
+# print("debug")
 
 for i in range(length):
     if before1[i] == before2[i]:
         beforeFreq += 1
+        # counter+=1
+        # print(counter)
         beforeCount[before1[i]] = beforeCount.get(before1[i], 0) + 1
         # print("Before count:", beforeCount)
 
-beforeCollision = beforeFreq / length
-maxVal = 0
-va1 = 0
-val2 =  0
+beforeCollision = beforeFreq/length
+maxVal=0
+va1=0
+val2=0
 for j in range(26):
     for k in range(26):
         string1 = ""
@@ -40,7 +44,7 @@ for j in range(26):
                 string2 += ch
 
         length = min(len(string1), len(string2))
-
+        
         afterFreq = 0
         afterCount = {}
 

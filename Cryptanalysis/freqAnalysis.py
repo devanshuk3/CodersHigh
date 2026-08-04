@@ -13,8 +13,6 @@ with open("words2.txt", "r") as f:
         word = f.readline() 
 print(freqCount)
 
-
-
 freqCount2 = {}
 for i in range(1000):
      b = random.randint(1, 370105)
