@@ -4,6 +4,4 @@ def factorial(num):
         for i in range(num, 1, -1):
                 prod*=i
         return prod
-
-
 print(factorial(num))
