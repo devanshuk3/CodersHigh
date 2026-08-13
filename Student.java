@@ -7,7 +7,6 @@ Student s1 = new Student();
 Student s2 = new Student();
 
 s1.name = "Devanshu";
-s2.name = "Nikita";
 
 Student.college = "SKIT";
 s1.college = "skit";

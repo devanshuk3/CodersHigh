@@ -9,4 +9,4 @@ while i<length:
     if(i<len(str2)):
         str3+=str2[i]
     i+=1
-print(str3)
+print(str3) 
